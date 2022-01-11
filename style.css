@@ -1,0 +1,486 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: serif;
+}
+nav{
+  background:#0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 17px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpeg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+.hometext {
+  position: relative;
+  width: 50%;
+}
+.hometext .btn {
+  position: absolute;
+  top: 500px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hometext .btn:hover {
+ background-color: #058ef7;
+}
+.bottomtextEcn  .btn:hover {
+ background-color: #058ef7;
+}
+.bottomtextEcn .btn {
+  position: absolute;
+  top: 890%;
+  left: 45%;
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.bottomtextUSA  .btn:hover {
+ background-color: #058ef7;
+}
+.bottomtextUSA .btn {
+  position: absolute;
+  top: 850%;
+  left: 45%;
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.intro {
+  position: absolute;
+  top: 250px;
+  left: 30%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #616161;
+}
+.introcontent {
+  position: absolute;
+  top: 320px;
+  left: 30%;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #616161;
+}
+.Nameclass {
+  position: absolute;
+  top: 390px;
+  left: 30%;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #616161;
+}
+.Title {
+  position: absolute;
+  top: 850px;
+  left: 55%;
+  font-size: 40px;
+  font-weight: bold;
+  white-space: normal;
+}
+.Econpic{
+  position: absolute;
+  top: 930px;
+  left: 10%;
+  white-space: normal;
+}
+.Econdesc {
+  position: absolute;
+  top: 950px;
+  left: 30%;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 50px;
+}
+ .btnecn {
+  position: absolute;
+  top: 1050px;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btnecn:hover {
+ background-color: #058ef7;
+}
+ .USAflag {
+   position: absolute;
+   top: 1100px;
+   left: 10%;
+   white-space: normal;
+ }
+ .usadesc {
+   position: absolute;
+   top: 1120px;
+   left: 30%;
+   font-size: 20px;
+   text-align: justify;
+   margin-right: 50px;
+ }
+  .btnus {
+   position: absolute;
+   top: 1205px;
+   left: 34%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #0082e6;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ .btnus:hover {
+  background-color: #058ef7;
+}
+.BRAflag {
+  position: absolute;
+  top: 1270px;
+  left: 10%;
+  white-space: normal;
+}
+.BRAdesc {
+  position: absolute;
+  top: 1290px;
+  left: 30%;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 50px;
+}
+ .btnbr {
+  position: absolute;
+  top: 1375px;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btnbr:hover {
+ background-color: #058ef7;
+}
+.INSflag {
+  position: absolute;
+  top: 1440px;
+  left: 10%;
+  white-space: normal;
+}
+.INSdesc {
+  position: absolute;
+  top: 1460px;
+  left: 30%;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 50px;
+}
+ .btnid {
+  position: absolute;
+  top: 1545px;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btnid:hover {
+ background-color: #058ef7;
+}
+.title2{
+  position: absolute;
+  top: 1600px;
+  left: 50%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Aboutimg{
+  position: absolute;
+  top: 1675px;
+  left: 10%;
+}
+.Websitedesc {
+  position: absolute;
+  top: 1725px;
+  left: 34%;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+}
+.Websitedesc2 {
+  position: absolute;
+  top: 1875px;
+  left: 34%;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+}
+.Title {
+  position: absolute;
+  top: 14%;
+  left: 37%;
+  font-size: 150%;
+}
+.Content {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  right: 20%;
+  text-indent: 5%;
+  text-align: justify;
+  font-size: 140%;
+  line-height: 150%
+}
+.Content .h2 {
+  left: 40%
+}
+.Econpic2{
+  position: absolute;
+  left: 20%;
+}
+.ECNPic1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.picmain {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.USApicmain {
+  position: absolute;
+  left: 28%;
+  top: 20%;
+}
+.BRApicmain {
+  position: absolute;
+  left: 32%;
+  top: 22%;
+}
+.Picture {
+  position: absolute;
+  left: 20%;
+}
+.Picture2 {
+  position: absolute;
+  left: 10%;
+}
+.Picture3 {
+  position: absolute;
+  left: 30%;
+}
+.INSpicmain {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.Picture4 {
+  position: absolute;
+  left: 30%;
+}
+.FooterHome {
+position: absolute;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+top: 2100px;
+line-height: 1.5;
+}
+.Articles {
+  position: absolute;
+  left: 50%;
+  top: 105%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.FooterEcn {
+position: absolute;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+top: 7400px;
+line-height: 1.5;
+}
+.FooterUSA {
+position: absolute;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+top: 7100px;
+line-height: 1.5;
+}
+.bottomtextBRA  .btn:hover {
+ background-color: #058ef7;
+}
+.bottomtextBRA .btn {
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.FooterBRA {
+position: absolute;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+top: 6300px;
+line-height: 1.5;
+}
+.bottomtextINS  .btn:hover {
+ background-color: #058ef7;
+}
+.bottomtextINS .btn {
+  position: absolute;
+  top: 100%;
+  left: 42%;
+  background-color: #0082e6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.FooterINS {
+position: absolute;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+top: 5150px;
+line-height: 1.5;
+}
